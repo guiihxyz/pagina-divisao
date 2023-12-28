@@ -17,7 +17,8 @@ const justificativas = document.querySelector(".justificativas")
 const justificativasItem = document.querySelector(".justificativasItem")
 const buttonPesquisa = document.querySelector(".container-membros-button")
 const resultadoPesquisa = document.querySelector(".container-membros-pesquisa")
-
+const escolha = document.querySelector(".membros-escolha")
+const consulta = document.querySelector(".consulta-de-membros")
 
 homeItem.addEventListener("click", () => {
     home.style.display = "flex"
@@ -31,7 +32,10 @@ membrosItem.addEventListener("click", () => {
     membros.style.display = "flex"
     documentos.style.display = "none"
     justificativas.style.display = "none"
+    escolha.style.display = "block"
+    consulta.style.display = "none"
     resultadoPesquisa.style.opacity = 0
+
 })
 
 documentosItem.addEventListener("click", () => {
@@ -51,8 +55,6 @@ justificativasItem.addEventListener("click", () => {
 const buttonConsulta = document.querySelector(".button-consulta")
 
 buttonConsulta.addEventListener("click", () => {
-    const escolha = document.querySelector(".membros-escolha")
-    const consulta = document.querySelector(".consulta-de-membros")
     escolha.style.display = "none"
     consulta.style.display = "block"
 })
