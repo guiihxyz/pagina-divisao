@@ -44,7 +44,7 @@ main {
     border-radius: 15px;
     box-shadow: 2px 2px 15px #2e2e2e52;
     width: 80%;
-    transition: height 0.4s;
+    transition: width 0.3s, height 0.3s;
 }
 
 .lista-opcoes {
